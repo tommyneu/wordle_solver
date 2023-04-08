@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wordle Pos</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="list.js"></script>
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <section id="input">
+            <div id="pre_guesses">
+            </div>
+            <div id="current_guess">
+                <div class="input_letter">
+                    <input type="text" id="item1" maxlength="1"/>
+                    <input type="radio" id="item1_grey" name="item1" value="grey" checked/>
+                    <label for="item1_grey">⬜</label>
+                    <input type="radio" id="item1_yellow" name="item1" value="yellow"/>
+                    <label for="item1_yellow">🟨</label>
+                    <input type="radio" id="item1_green" name="item1" value="green"/>
+                    <label for="item1_green">🟩</label>
+                </div>
+                <div class="input_letter">
+                    <input type="text" id="item2" maxlength="1"/>
+                    <input type="radio" id="item2_grey" name="item2" value="grey" checked/>
+                    <label for="item2_grey">⬜</label>
+                    <input type="radio" id="item2_yellow" name="item2" value="yellow"/>
+                    <label for="item2_yellow">🟨</label>
+                    <input type="radio" id="item2_green" name="item2" value="green"/>
+                    <label for="item2_green">🟩</label>
+                </div>
+                <div class="input_letter">
+                    <input type="text" id="item3" maxlength="1"/>
+                    <input type="radio" id="item3_grey" name="item3" value="grey" checked/>
+                    <label for="item3_grey">⬜</label>
+                    <input type="radio" id="item3_yellow" name="item3" value="yellow"/>
+                    <label for="item3_yellow">🟨</label>
+                    <input type="radio" id="item3_green" name="item3" value="green"/>
+                    <label for="item3_green">🟩</label>
+                </div>
+                <div class="input_letter">
+                    <input type="text" id="item4" maxlength="1"/>
+                    <input type="radio" id="item4_grey" name="item4" value="grey" checked/>
+                    <label for="item4_grey">⬜</label>
+                    <input type="radio" id="item4_yellow" name="item4" value="yellow"/>
+                    <label for="item4_yellow">🟨</label>
+                    <input type="radio" id="item4_green" name="item4" value="green"/>
+                    <label for="item4_green">🟩</label>
+                </div>
+                <div class="input_letter">
+                    <input type="text" id="item5" maxlength="1"/>
+                    <input type="radio" id="item5_grey" name="item5" value="grey" checked/>
+                    <label for="item5_grey">⬜</label>
+                    <input type="radio" id="item5_yellow" name="item5" value="yellow"/>
+                    <label for="item5_yellow">🟨</label>
+                    <input type="radio" id="item5_green" name="item5" value="green"/>
+                    <label for="item5_green">🟩</label>
+                </div>
+                <div>
+                    <button id="enter_button">Enter</button>
+                    <button id="undo_button">Undo</button>
+                    <button id="reset_button">reset</button>
+                </div>
+            </div>
+        </section>
+        <p class="section_label">Best Next Guess</p>
+        <section id="best_next_guess" class="styled_scrollbar"></section>
+        <p class="section_label">Possible Words</p>
+        <section id="possible_words" class="styled_scrollbar"></section>
+    </body>
+</html>
